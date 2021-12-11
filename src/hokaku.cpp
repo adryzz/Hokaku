@@ -15,15 +15,6 @@ static void output_destroy(void* data)
 {
 }
 
-static void output_defaults(obs_data_t *settings)
-{
-}
-
-static void send_frame(byte* data)
-{
-
-}
-
 struct obs_source_info hokaku_output = 
 {
     .id = MODULE_ID,
