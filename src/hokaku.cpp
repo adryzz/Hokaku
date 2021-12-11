@@ -19,15 +19,19 @@ static void output_defaults(obs_data_t *settings)
 {
 }
 
-obs_source_info hokaku_output = (hokaku_output = obs_source_info(),
-    hokaku_output.id = MODULE_ID,
-    hokaku_output.type = OBS_SOURCE_TYPE_INPUT,
-    hokaku_output.output_flags = OBS_SOURCE_ASYNC_VIDEO | OBS_SOURCE_DO_NOT_DUPLICATE,
-    hokaku_output.get_name = MODULE_NAME,
-    hokaku_output.create = output_create,
-    hokaku_output.destroy = output_destroy,
-    hokaku_output.get_defaults = output_defaults,
-    hokaku_output
+static void send_frame(byte* data)
+{
+
+}
+
+struct obs_source_info hokaku_output = 
+{
+    .id = MODULE_ID,
+    .type = OBS_SOURCE_TYPE_INPUT,
+    .output_flags = OBS_SOURCE_ASYNC_VIDEO | OBS_SOURCE_DO_NOT_DUPLICATE,
+    .get_name = MODULE_NAME,
+    .create = output_create,
+    .destroy = output_destroy,
 );
 
 bool obs_module_load(void)
