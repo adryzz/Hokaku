@@ -9,10 +9,13 @@ OBS_MODULE_USE_DEFAULT_LOCALE("hokaku", "en-US")
 
 static void* output_create(obs_data_t* settings, obs_source_t* context)
 {
+    UNUSED_PARAMETER(settings);
+	UNUSED_PARAMETER(context);
 }
 
 static void output_destroy(void* data)
 {
+	UNUSED_PARAMETER(data);
 }
 
 struct obs_source_info hokaku_output = 
