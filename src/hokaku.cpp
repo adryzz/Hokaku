@@ -35,10 +35,10 @@ bool obs_module_load(void)
     obs_register_source(&hokaku_output);
 
     return true;
-  //TODO: Initialize named pipe
+    //TODO: Initialize named pipe
 }
 
 void obs_module_unload(void)
 {
-  //TODO: Notify app that it has been unloaded
+    //TODO: Notify app that it has been unloaded
 }
