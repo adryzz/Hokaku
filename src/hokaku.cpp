@@ -30,6 +30,7 @@ struct obs_source_info hokaku_output =
     .type = OBS_SOURCE_TYPE_INPUT,
     .output_flags = OBS_SOURCE_ASYNC_VIDEO | OBS_SOURCE_DO_NOT_DUPLICATE,
     .get_name = MODULE_NAME,
+    .icon_type = OBS_ICON_TYPE_CAMERA,
     .create = output_create,
     .destroy = output_destroy,
 );
